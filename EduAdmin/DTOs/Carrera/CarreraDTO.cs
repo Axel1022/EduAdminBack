@@ -1,0 +1,9 @@
+﻿namespace EduAdmin.DTOs.Carrera
+{
+    public class CarreraDTO
+    {
+        public int Id { get; set; }
+
+        public string? Name { get; set; }
+    }
+}
