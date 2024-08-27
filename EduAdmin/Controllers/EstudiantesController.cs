@@ -68,7 +68,8 @@ namespace EduAdmin.Controllers
             var existeAdmitidoComo = await _context.AdmitidoComo.AnyAsync(x => x.Id == estudiante.IdAdmitidoComo);
 
             if (!existeAdmitidoComo)
-            {
+            { 
+
                 return NotFound($"AdmitidoComo con id {estudiante.IdAdmitidoComo} no encontrado.");
             }
 
